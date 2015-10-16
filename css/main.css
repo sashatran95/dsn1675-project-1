@@ -14,12 +14,72 @@ html{
 	-ms-text-size-adjust: 100%;	
 	-webkit-text-size-adjust: 100%;	
 	text-size-adjust: 100%;
+	font-family: 'Lato', sans-serif;
 
 }		
 *, *::before, *::after{
 	box-sizing: inherit;
 }
-
-main{
-	font-family: 'Oswald', sans-serif;
+body{
+	margin: 0;
+	background-color: #E8FAFF;
 }
+h3{
+	width: 111.6%;
+	background-color: #437DB7;
+	text-align: center;
+	padding: 1.5em;
+    margin-bottom: 0;
+    margin-left: -6%;
+    color: white;
+	font-family: 'Lato', sans-serif, bold;
+}
+main{
+	padding:0;
+}
+img{
+	width: 100%;
+	display: block;
+
+}
+.top {
+	background-image: url(../images/pictures-01.jpg);
+	margin: -6% -6% -10%;
+	padding: 14em;
+	background-size: cover;
+}
+.top p{
+	top: -6rem;
+	color: white;
+	text-align: left;
+	font-family: 'Lato', sans-serif, light;
+	font-size: 23px;
+	width: 100%;
+	text-shadow: 4px 4px 10px black;
+	max-width: 25rem;
+}
+.story p{
+	text-align: center;
+	display: inline-block;
+	padding: 0.5rem;
+}
+.bg4contacts{
+	background-image: url(../images/bg-contacts.jpg);
+	margin: 0 -6%;
+	padding: 14em;
+	background-size: cover;
+}
+footer {
+  	padding-bottom: 1.5rem;
+  	padding-top: 1.5rem;
+
+  	font-size: 0.75rem;
+  	text-align: center;
+}
+/*MEDIA INQUIERIES TIME
+@media only screen and (min-width: 240px) {
+
+@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 1000px) {
+*/
