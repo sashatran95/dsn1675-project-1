@@ -29,11 +29,11 @@ h3{
 	background-color: #437DB7;
 	text-align: center;
 	padding: 0.7em;
-    margin-bottom: 0;
     margin-left: -6%;
     color: white;
 	font-family: 'Lato', sans-serif, bold;
 	font-size: 2rem;
+	clear: both;
 }
 main{
 	padding:0;
@@ -41,13 +41,13 @@ main{
 img{
 	width: 100%;
 	display: block;
-
+}
+strong {
+	font-family: 'Lato', sans-serif, normal;
 }
 .top {
-	background-image: url(../images/pictures-01.jpg);
-	margin: -6% -6% -10%;
-	padding: 14em;
-	background-size: cover;
+	position: relative;
+
 }
 .top p{
 	top: -6rem;
@@ -64,11 +64,18 @@ img{
 	display: inline-block;
 	padding: 0.5rem;
 }
+.contacts img{
+	display: inline-block;
+	width: 24%;
+	position: relative;
+}
 .bg4contacts{
 	background-image: url(../images/bg-contacts.jpg);
-	margin: 0 -6%;
+	margin: 0;
 	padding: 14em;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
 }
 footer {
   	padding-bottom: 1.5rem;
@@ -79,11 +86,32 @@ footer {
 }
 footer img {
 	width: 20%;
+	margin: 0 auto;
 }
-/*MEDIA INQUIERIES TIME
-@media only screen and (min-width: 240px) {
+/*MEDIA INQUIERIES TIME*/
+@media only screen and (min-width: 240px) { /*Small Screen*/
+	h3 {
+		font-size: 25px;
+	}
 	
-@media only screen and (min-width: 600px) {
-
-@media only screen and (min-width: 1000px) {
-*/
+}
+	
+@media only screen and (min-width: 600px) { /*Medium Screen*/
+	h3 {
+		text-align: left;
+		margin-left: 0%;
+		font-size: 50;
+	}
+	.floatleft{
+		display: inline-block;
+		float: left;
+  		margin-bottom: 1rem;
+  		width: 50%;
+	}
+	.floatright{
+		display: inline-block;
+		float: right;
+  		margin-bottom: 1rem;
+  		width: 50%;
+	}
+/*@media only screen and (min-width: 1000px) { /*Large Screen*/
