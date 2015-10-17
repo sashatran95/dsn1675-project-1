@@ -68,14 +68,19 @@ strong {
 	display: inline-block;
 	width: 24%;
 	position: relative;
+	text-align: center;
+	padding-left: .1rem;
+	padding-right: .1rem;
 }
 .bg4contacts{
 	background-image: url(../images/bg-contacts.jpg);
-	margin: 0;
-	padding: 14em;
+	margin: 0 auto;
+	padding: 0;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
+	display: block;
+	width: 100%
 }
 footer {
   	padding-bottom: 1.5rem;
@@ -84,23 +89,45 @@ footer {
   	font-size: 0.75rem;
   	text-align: center;
 }
+footer p{
+	color: #437DB7;
+	font-family: 'Lato', sans-serif, light;
+}
 footer img {
 	width: 20%;
 	margin: 0 auto;
 }
 /*MEDIA INQUIERIES TIME*/
-@media only screen and (min-width: 240px) { /*Small Screen*/
+@media only screen and (min-width: 100px) { /*Small Screen*/
 	h3 {
-		font-size: 25px;
+		font-size: 20px;
 	}
-	
+	.top p{
+		font-size: 15px;
+	}
+	.story p{
+		text-align: center;
+		display: inline-block;
+		padding: 0.5rem;
+		font-size: 14px;
+	}
 }
 	
 @media only screen and (min-width: 600px) { /*Medium Screen*/
 	h3 {
 		text-align: left;
 		margin-left: 0%;
-		font-size: 50;
+		font-size: 25px;
+	}
+	.top p{
+		font-size: 25px;
+	}
+	.story p{
+		text-align: left;
+		display: inline-block;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size: 18px;
 	}
 	.floatleft{
 		display: inline-block;
@@ -114,4 +141,16 @@ footer img {
   		margin-bottom: 1rem;
   		width: 50%;
 	}
-/*@media only screen and (min-width: 1000px) { /*Large Screen*/
+}
+@media only screen and (min-width: 800px) { /*Medium-Large Screen*/
+	h3 {
+		text-align: left;
+		margin-left: 0%;
+		font-size: 35px;
+}
+@media only screen and (min-width: 1000px) { /*Large Screen*/
+	h3 {
+		text-align: left;
+		margin-left: 0%;
+		font-size: 50px;
+	}
