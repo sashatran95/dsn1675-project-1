@@ -30,6 +30,8 @@ h3{
 	text-align: center;
 	padding: 0.7em;
     margin-left: -6%;
+    margin-bottom: 0;
+    margin-top: 9px;
     color: white;
 	font-family: 'Lato', sans-serif, bold;
 	font-size: 2rem;
@@ -50,32 +52,34 @@ strong {
 
 }
 .top p{
-	top: -6rem;
 	color: white;
 	text-align: left;
 	font-family: 'Lato', sans-serif, light;
-	font-size: 23px;
+	margin: 0 auto;
 	width: 100%;
 	text-shadow: 4px 4px 10px black;
 	max-width: 25rem;
+	padding: 1rem;
 }
 .story p{
 	text-align: center;
 	display: inline-block;
 	padding: 0.5rem;
+	padding-bottom: 0;
 }
 .contacts img{
 	display: inline-block;
 	width: 24%;
 	position: relative;
 	text-align: center;
+	margin: 0 auto;
 	padding-left: .1rem;
 	padding-right: .1rem;
 }
 .bg4contacts{
 	background-image: url(../images/bg-contacts.jpg);
 	margin: 0 auto;
-	padding: 0;
+	padding: calc(2em + 20vw) 0 0;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
@@ -92,18 +96,22 @@ footer {
 footer p{
 	color: #437DB7;
 	font-family: 'Lato', sans-serif, light;
+	font-size: 16px;
+}
+footer a{
+	font-size: 12px;
 }
 footer img {
 	width: 20%;
 	margin: 0 auto;
 }
 /*MEDIA INQUIERIES TIME*/
-@media only screen and (min-width: 100px) { /*Small Screen*/
+@media only screen and (min-width: 240px) { /*Small Screen*/
 	h3 {
 		font-size: 20px;
 	}
 	.top p{
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.story p{
 		text-align: center;
@@ -140,6 +148,16 @@ footer img {
 		float: right;
   		margin-bottom: 1rem;
   		width: 50%;
+	}
+	.bg4contacts{
+		background-image: url(../images/bg-contacts.jpg);
+		margin: 0 auto;
+		padding: calc(2em + 0vw) 0 153px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 100%
 	}
 }
 @media only screen and (min-width: 800px) { /*Medium-Large Screen*/
